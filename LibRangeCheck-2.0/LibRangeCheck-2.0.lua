@@ -48,10 +48,10 @@ if not lib then
   return
 end
 
-local IsClassic = false
-  or (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC)
-  or (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
-  or (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_WRATH_CLASSIC)
+local IsClassicVanilla = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC)
+local IsClassicBC = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
+local IsClassicWrath = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_WRATH_CLASSIC)
+local IsMainline = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE)
 
 -- << STATIC CONFIG
 
@@ -1366,7 +1366,8 @@ function lib:activate()
     self.frame = frame
     frame:RegisterEvent("LEARNED_SPELL_IN_TAB")
     frame:RegisterEvent("CHARACTER_POINTS_CHANGED")
-    if not IsClassic then
+    if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_WRATH_CLASSIC or _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
+    if IsMainline or IsClassicWrath then
       frame:RegisterEvent("PLAYER_TALENT_UPDATE")
     end
     frame:RegisterEvent("SPELLS_CHANGED")
