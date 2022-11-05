@@ -1,6 +1,5 @@
 --[[
 Name: LibRangeCheck-2.0
-Revision: $Revision$
 Author(s): mitch0
 Website: http://www.wowace.com/projects/librangecheck-2-0/
 Description: A range checking library based on interact distances and spell ranges
@@ -41,7 +40,7 @@ License: Public Domain
 -- @class file
 -- @name LibRangeCheck-2.0
 local MAJOR_VERSION = "LibRangeCheck-2.0"
-local MINOR_VERSION = tonumber(("$Revision$"):match("%d+")) + 100000
+local MINOR_VERSION = tonumber(("@project-date-integer@"):match("%d+") or "9999999999999")
 
 local lib, oldminor = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
 if not lib then
