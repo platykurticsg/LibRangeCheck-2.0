@@ -1365,7 +1365,6 @@ function lib:activate()
     self.frame = frame
     frame:RegisterEvent("LEARNED_SPELL_IN_TAB")
     frame:RegisterEvent("CHARACTER_POINTS_CHANGED")
-    if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_WRATH_CLASSIC or _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
     if IsMainline or IsClassicWrath then
       frame:RegisterEvent("PLAYER_TALENT_UPDATE")
     end
