@@ -594,8 +594,6 @@ local function createCheckerList(spellList, itemList, interactList)
           local checker = getCheckerForSpellWithMinRange(spellIdx, minRange, range, spellList)
           if checker then
             addChecker(res, range, minRange, checker, "spell:" .. sid .. ":" .. tostring(name))
-          else
-            print("### cannot use spell without minChecker: " .. tostring(name) .. ", " .. tostring(minRange) .. " - " ..  tostring(range))
           end
         else
           addChecker(res, range, minRange, checkers_Spell[spellIdx], "spell:" .. sid .. ":" .. tostring(name))
