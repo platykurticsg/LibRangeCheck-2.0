@@ -40,7 +40,7 @@ License: Public Domain
 -- @class file
 -- @name LibRangeCheck-2.0
 local MAJOR_VERSION = "LibRangeCheck-2.0"
-local MINOR_VERSION = 10000000000002 -- mistakes were made...
+local MINOR_VERSION = 10000000000003 -- mistakes were made...
 
 local lib, oldminor = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
 if not lib then
