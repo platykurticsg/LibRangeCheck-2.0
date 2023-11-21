@@ -179,6 +179,7 @@ FriendSpells["WARLOCK"] = {
 HarmSpells["WARLOCK"] = {
   686, -- ["Shadow Bolt"], -- 40
   5019, -- ["Shoot"], -- 30
+  6789, -- ["Mortal Coil"], -- 20
 }
 
 -- Items [Special thanks to Maldivia for the nice list]
