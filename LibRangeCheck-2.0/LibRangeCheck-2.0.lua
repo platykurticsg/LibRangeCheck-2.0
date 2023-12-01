@@ -215,8 +215,8 @@ local FriendItems  = {
   },
   [10] = {
     32321, -- Sparrowhawk Net
-  	166785, -- Detoxified Blight Grenade
-	  175063, -- Aqir Eqq Cluster
+    166785, -- Detoxified Blight Grenade
+    175063, -- Aqir Eqq Cluster
   },
   [15] = {
     1251, -- Linen Bandage
@@ -322,8 +322,8 @@ local HarmItems = {
   },
   [10] = {
     32321, -- Sparrowhawk Net
-   	166785, -- Detoxified Blight Grenade
-  	175063, -- Aqir Eqq Cluster
+    166785, -- Detoxified Blight Grenade
+    175063, -- Aqir Eqq Cluster
   },
   [15] = {
     33069, -- Sturdy Rope
